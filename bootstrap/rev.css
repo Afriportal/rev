@@ -1,0 +1,67 @@
+body{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../images/sponge.jpg);
+    background-position: center;
+    background-size: cover;
+}
+html{
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer{
+    flex: 1!important;
+}
+#nav{
+    border-radius: 0px!important;
+    background: transparent!important;
+    border: none!important;
+}
+.navbar-nav >li > a {
+    color: #fff!important;
+}
+#dash{
+    border: 1px solid #16d216;
+    box-shadow: 1px 1px 1px 1px;
+    background-image: url(../images/pad.jpg);
+    margin: 140px auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#action{
+    color: #16d216;
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+#padding{
+    padding:20px 10px;
+}
+#padd{
+    padding:10px 5px;
+}
+#trans{
+    color: #16d216;
+    font-size: 20px;
+    margin-right: 10px;
+}
+#update-acc{
+    border: 1px solid #16d216;
+    box-shadow: 1px 1px 1px 1px;
+    background-image: url(../images/pad.jpg);
+    margin: 40px auto;
+}
+#update-alert{
+   border: 1px solid #ff9800;
+    box-shadow: 1px 1px 1px 1px;
+    background-image: url(../images/pad.jpg);
+    margin: 40px auto; 
+}
+#alert{
+    color: #ff9800;
+    font-size: 30px;
+    margin-right: 10px;
+}
