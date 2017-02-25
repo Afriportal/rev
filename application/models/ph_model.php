@@ -95,6 +95,18 @@ class Ph_model extends CI_Model {
 		} else {
 			return false;
 		}
+	}
+
+	function upload_pop( $data ) {
+
+		$where = array('payer_id' => $data['payer_id'], 'did' => $data['did']);
+
+		$this->where( $where );
+		if( $this->db->update('merge', array('pop', $data['pop']))) {
+			return true;
+		} else {
+			return false;
+		}
 
 	}
 }

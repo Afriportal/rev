@@ -30,8 +30,8 @@ class Ph extends CI_Controller {
 
 			// Lets provide help
 			$data = array(
-				'did' => $this->input->post('did'),
-				'usr_id' => $this->input->post('usr_id'), // Donating = 1  receiving = 2
+				'did' => $data['did'],
+				'usr_id' => $this->session->userdata('usr_id'), // Donating = 1  receiving = 2
 				'amount' => $amount,
 				'expecting' => $amount * 2			
 			);
@@ -47,20 +47,22 @@ class Ph extends CI_Controller {
 
 	public function do_upload() {
 		//path to upload
-		//$upload_dir ='./upload/';
+		$upload_dir ='./upload/';
 		$did = $img_dir_name = $this->input->post('popid');
 
-	if (!mkdir($img_dir_name)) {
+	if (!mkdir($upload_dir.$img_dir_name)) {
 		// Can't make upload directory
-		$page_data = array('fail' => 'There was an error making directory','success' => false);
-		$this->load->view('common/login_header');
-		$this->load->view('nav/top_nav');
-		$this->load->view('users/sent_payment', $page_data);
-		$this->load->view('common/footer');
+		echo 'There was an error making directory';
+		redirect($_SERVER['HTTP_REFERER']);
+		//$page_data = array('fail' => 'There was an error making directory','success' => false);
+		//$this->load->view('common/login_header');
+		//$this->load->view('nav/top_nav');
+		//$this->load->view('users/sent_payment', $page_data);
+		//$this->load->view('common/footer');
 	}
 		// set the configuration
 		// die($this->input->post('img_count_limit'));
-		$config['upload_path'] = $img_dir_name;
+		$config['upload_path'] = $upload_dir.$img_dir_name;
 		$config['allowed_types'] = 'gif|jpg|jpeg|png';
 		$config['max_size'] = '10000';
 		$config['max_width'] = '1024';
@@ -69,47 +71,39 @@ class Ph extends CI_Controller {
 		$this->load->library('upload', $config);
 
 		if ( ! $this->upload->do_upload() ) {
+			die('Nothing here');
 			// unset the error upload
 			//unset($config['upload_path']);
-			rmdir($img_dir_name);
+			rmdir($upload_dir.$img_dir_name);
 			// display all the errors encounter while uploading
-			$page_data = array('fail' => $this->upload->display_errors(), 'success' => false);
-			$this->load->view('common/login_header');
-			$this->load->view('nav/top_nav');
-			$this->load->view('users/sent_payment', $page_data);
-			$this->load->view('common/footer');
+			//$page_data = array('fail' => $this->upload->display_errors(), 'success' => false);
+			echo $this->upload->display_errors();
+			redirect($_SERVER['HTTP_REFERER']);
 		} else { // No error uploading
 			// $data = array('upload_data' => $this->upload->data());
 			$image_data = $this->upload->data(); // get uploaded image information
 			// save to database
 			// @Incoming false or $img_url_code (anchor)
-			$page_data['result'] = $this->Ph_model->save_pop( 
+			$page_data['result'] = $this->Ph_model->upload_pop( 
 				array('pop' => $image_data['file_name'], 
 					//'img_dir_name' => $img_dir_name,
-					'payer_id' -> $this->session->userdate('usr_id'),
-					'did' => $this->input->post('img_count_limit'))
+					'payer_id' => $this->session->userdate('usr_id'),
+					'did' => $this->input->post('popid')) //////////////////////////
 				);
-			$page_data['success'] = true;
-			$page_data['file_name'] = $image_data['file_name'];
-			$page_data['img_dir_name'] = $img_dir_name;
+			//$page_data['success'] = true;
+			//$page_data['file_name'] = $image_data['file_name'];
+			//$page_data['img_dir_name'] = $img_dir_name;
 			if ($page_data['result'] == false) {
 				// error while inserting into the database
 				// unset the dir
-				unset($img_dir_name);
-				$page_data = array('fail' => 'There was an error uploading your pop'));
-				$this->load->view('common/login_header');
-				$this->load->view('nav/top_nav');
-				$this->load->view('users/sent_payment', $page_data);
-				$this->load->view('common/footer');
+				//unset($upload_dir.$img_dir_name);
+				echo 'There was an error uploading your POP';
+				redirect($_SERVER['HTTP_REFERER']);	
 			} else {
 				// $page_data['result'] = $img_url_code
 				// success - display image and link
-				$page_data = array('fail' => false, 'success' => true);
-			
-				$this->load->view('common/login_header');
-				$this->load->view('nav/top_nav');
-				$this->load->view('users/sent_payment', $page_data);
-				$this->load->view('common/footer');
+				$this->session->set_flashdata('key', 'Proof of payment has been successfully uploaded');
+				redirect($_SERVER['HTTP_REFERER']);	
 			}
 		}
 	}
