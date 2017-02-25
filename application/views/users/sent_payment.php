@@ -43,7 +43,7 @@
                             <td><?php echo ucwords($row->receiver_name); ?></td>
                             <td><?php echo $row->receiver_phone; ?></td>
                             <td><?php echo $row->receiver_state; ?></td>
-                            <td class="text-danger">Awaiting Confirmation</td>
+                            <td class="text-danger">Unconfirmed</td><!--- -->
                             <td>Zenith Bank - 08292220283 - Sokoya Adeniji Philip</td>
                             <td><?php echo date('Y/m/d');?></td>
                             <?php $this->session->set_userdata('popid', $row->did); ?>
@@ -124,7 +124,7 @@
 
 
          <!-- Modal -->
-     <div class="modal fade" id="popmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+       <div class="modal fade" id="popmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
@@ -158,8 +158,8 @@
     <script src="<?php echo base_url('bootstrap/js/bootstrap.min.js');?>"></script>
     <script>
            $('#myModal').on('shown.bs.modal', function () {
-  $('#myInput').focus()
-})
+            $('#myInput').focus()
+          })
    </script>
 </body>
 </html>
