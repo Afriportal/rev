@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 16, 2017 at 12:48 PM
+-- Generation Time: Feb 24, 2017 at 10:50 PM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -42,50 +42,130 @@ CREATE TABLE IF NOT EXISTS `ci_sessions` (
 --
 
 INSERT INTO `ci_sessions` (`id`, `ip_address`, `timestamp`, `user_agent`, `last_activity`, `data`) VALUES
-('30c014db396b91e325f6a1e2d63507d08fa00ec1', '127.0.0.1', '0000-00-00 00:00:00', NULL, 0, '__ci_last_regenerate|i:1487174500;'),
-('f32f8bc05f4de38d77561db7ad5d4ca8460ec37d', '127.0.0.1', '0000-00-00 00:00:00', NULL, 0, '__ci_last_regenerate|i:1487174816;'),
-('3d963859cde291e0154e51ed7e916e11bd37a1ea', '127.0.0.1', '0000-00-00 00:00:00', NULL, 0, '__ci_last_regenerate|i:1487175100;'),
-('7c86b22ee016e6705a83524a9801c51efc19fc59', '127.0.0.1', '0000-00-00 00:00:00', NULL, 0, '__ci_last_regenerate|i:1487175226;'),
-('fe052e750d6a38bab2f5b8aeea1b6947aab4b34f', '127.0.0.1', '0000-00-00 00:00:00', NULL, 0, '__ci_last_regenerate|i:1487175622;'),
-('11b8c7f56a1ea177b8bd9c97b88d0ddf3a3c5976', '::1', '0000-00-00 00:00:00', NULL, 0, '__ci_last_regenerate|i:1487184128;'),
-('aecab7d3ed4bf7dadccbcbe14ba6e8e797f69f12', '::1', '0000-00-00 00:00:00', NULL, 0, '__ci_last_regenerate|i:1487185114;'),
-('ae12250a2ee8ce1fa9d8cdbff31d2c72aecc1883', '::1', '0000-00-00 00:00:00', NULL, 0, '__ci_last_regenerate|i:1487185479;'),
-('97836012b3dd97a02947b71f9afee5e37b3a28ec', '::1', '0000-00-00 00:00:00', NULL, 0, '__ci_last_regenerate|i:1487186495;'),
-('c8bbee03630c825252c557a4192b5f6b8a4fa931', '::1', '0000-00-00 00:00:00', NULL, 0, '__ci_last_regenerate|i:1487187198;'),
-('0f2a2d6f665b91fe654aff4ac51c65fe9f82ffd2', '::1', '0000-00-00 00:00:00', NULL, 0, '__ci_last_regenerate|i:1487187502;'),
-('ffaad2227fa3b196426dc670407d01f0935107b4', '::1', '0000-00-00 00:00:00', NULL, 0, '__ci_last_regenerate|i:1487189167;'),
-('e3f890caea715a19ee7e514d7bcd6fe51e4dae4a', '::1', '0000-00-00 00:00:00', NULL, 0, '__ci_last_regenerate|i:1487190053;newuser|b:1;message|b:0;__ci_vars|a:2:{s:7:"newuser";i:1487190258;s:7:"message";i:1487190258;}usr_id|s:1:"1";acc_id|s:1:"0";usr_email|s:22:"sokoyaphilip@yahoo.com";usr_access_level|s:1:"2";logged_in|b:1;'),
-('1ecea211718c7fe5db77a3d0ca053948a32b117a', '::1', '0000-00-00 00:00:00', NULL, 0, '__ci_last_regenerate|i:1487191481;usr_id|s:1:"1";acc_id|s:1:"0";username|s:0:"";usr_email|s:22:"sokoyaphilip@yahoo.com";usr_access_level|s:1:"2";usr_bank_details|s:1:"0";logged_in|b:1;'),
-('196c7a591ae02c0e0dd0affa4b30338c79907836', '127.0.0.1', '0000-00-00 00:00:00', NULL, 0, '__ci_last_regenerate|i:1487229312;'),
-('808f39ed0ed15d534ca55b031b9d197fda5d5446', '127.0.0.1', '0000-00-00 00:00:00', NULL, 0, '__ci_last_regenerate|i:1487234107;'),
-('8f4a5f964f061c3c81aaa2ed3933d120b3e4627b', '127.0.0.1', '0000-00-00 00:00:00', NULL, 0, '__ci_last_regenerate|i:1487234806;'),
-('08236118164a019526c5787617fdf34703ba70de', '127.0.0.1', '0000-00-00 00:00:00', NULL, 0, '__ci_last_regenerate|i:1487235151;'),
-('873fba947a29c55e0751dc18795b674060acfe03', '127.0.0.1', '0000-00-00 00:00:00', NULL, 0, '__ci_last_regenerate|i:1487235495;'),
-('9c91fbab554a95189eecd2cc1b7df0e67db0c774', '127.0.0.1', '0000-00-00 00:00:00', NULL, 0, '__ci_last_regenerate|i:1487236671;'),
-('8b5d293b35ac7217abc64fa47d76fc078938c6c9', '127.0.0.1', '0000-00-00 00:00:00', NULL, 0, '__ci_last_regenerate|i:1487236972;'),
-('f89ce9f0f8ceb7c556303950d0c8e7b51befdf22', '127.0.0.1', '0000-00-00 00:00:00', NULL, 0, '__ci_last_regenerate|i:1487240286;usr_id|s:1:"1";acc_id|s:1:"0";username|s:6:"philip";usr_email|s:22:"sokoyaphilip@yahoo.com";usr_access_level|s:1:"1";usr_bank_details|s:1:"0";logged_in|b:1;'),
-('36b660f4de9d68dd8776dcb66b74b640112c3f19', '127.0.0.1', '0000-00-00 00:00:00', NULL, 0, '__ci_last_regenerate|i:1487240651;usr_id|s:1:"1";acc_id|s:1:"0";username|s:6:"philip";usr_email|s:22:"sokoyaphilip@yahoo.com";usr_access_level|s:1:"1";usr_bank_details|s:1:"0";logged_in|b:1;'),
-('6df51b6c1e7cc8d73c4d87dee12e38454de81547', '127.0.0.1', '0000-00-00 00:00:00', NULL, 0, '__ci_last_regenerate|i:1487243209;usr_id|s:1:"1";acc_id|s:1:"0";username|s:6:"philip";usr_email|s:22:"sokoyaphilip@yahoo.com";usr_access_level|s:1:"1";usr_bank_details|s:1:"0";logged_in|b:1;'),
-('92d2bd643c010c469f51e193ddf1ff6aba909a3c', '127.0.0.1', '0000-00-00 00:00:00', NULL, 0, '__ci_last_regenerate|i:1487243853;usr_id|s:1:"1";acc_id|s:1:"0";username|s:6:"philip";usr_email|s:22:"sokoyaphilip@yahoo.com";usr_access_level|s:1:"1";usr_bank_details|s:1:"0";logged_in|b:1;'),
-('d3617dc83fa63c1c4b79e484f0a2fd4f2ee6ee1d', '127.0.0.1', '0000-00-00 00:00:00', NULL, 0, '__ci_last_regenerate|i:1487244989;usr_id|s:1:"1";acc_id|s:1:"0";username|s:6:"philip";usr_email|s:22:"sokoyaphilip@yahoo.com";usr_access_level|s:1:"1";usr_bank_details|s:1:"0";logged_in|b:1;');
+('4f480820cc323c96681047961b5b03d701600ee4', '127.0.0.1', '0000-00-00 00:00:00', NULL, 0, '__ci_last_regenerate|i:1487972553;usr_id|s:1:"9";fullname|s:10:"Bisi Alimi";usr_email|s:14:"bisi@gmail.com";usr_access_level|s:1:"2";usr_bank_details|s:1:"1";logged_in|b:1;popid|s:6:"753289";');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `pairing`
+-- Table structure for table `donation`
 --
 
-CREATE TABLE IF NOT EXISTS `pairing` (
+CREATE TABLE IF NOT EXISTS `donation` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `acc_id` int(11) NOT NULL COMMENT 'The donator or receiver account id',
-  `type` int(1) NOT NULL COMMENT '1 (donating) or 2 (receiving)',
-  `usr_fname` varchar(125) NOT NULL,
-  `usr_phone` varchar(125) NOT NULL,
-  `usr_state` varchar(125) NOT NULL,
+  `did` varchar(50) NOT NULL,
+  `usr_id` int(11) NOT NULL COMMENT 'The donator or receiver account id',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `amount` varchar(125) NOT NULL,
+  `expecting` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+
+--
+-- Dumping data for table `donation`
+--
+
+INSERT INTO `donation` (`id`, `did`, `usr_id`, `created_at`, `amount`, `expecting`) VALUES
+(4, '132694', 3, '2017-02-23 20:05:42', '20000', '40000');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `dump`
+--
+
+CREATE TABLE IF NOT EXISTS `dump` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `receiver_id` int(11) NOT NULL,
+  `usr_id` int(11) NOT NULL COMMENT 'The donator or receiver account id',
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `due_date` timestamp NOT NULL,
   `amount` varchar(125) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `merge`
+--
+
+CREATE TABLE IF NOT EXISTS `merge` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `did` int(11) NOT NULL COMMENT 'donation id',
+  `payer_id` int(11) NOT NULL COMMENT 'payer id',
+  `receiver_id` int(11) NOT NULL COMMENT 'receiver id',
+  `receiver_name` varchar(125) NOT NULL,
+  `receiver_state` varchar(125) NOT NULL,
+  `receiver_phone` varchar(125) NOT NULL,
+  `receiver_bank_name` varchar(30) NOT NULL,
+  `receiver_account_name` varchar(30) NOT NULL,
+  `receiver_account_no` varchar(30) NOT NULL,
+  `amount` bigint(10) NOT NULL,
+  `due_date` timestamp NOT NULL,
+  `pop` varchar(255) NOT NULL,
+  `status` int(1) NOT NULL DEFAULT '0' COMMENT 'status - ''0'' = nothing, ''1'' uploaded, 2'' - completed',
+  `completed` int(1) NOT NULL DEFAULT '0',
+  `report` int(11) NOT NULL DEFAULT '0',
+  `report_reason` text NOT NULL,
+  `report_proof` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=29 ;
+
+--
+-- Dumping data for table `merge`
+--
+
+INSERT INTO `merge` (`id`, `did`, `payer_id`, `receiver_id`, `receiver_name`, `receiver_state`, `receiver_phone`, `receiver_bank_name`, `receiver_account_name`, `receiver_account_no`, `amount`, `due_date`, `pop`, `status`, `completed`, `report`, `report_reason`, `report_proof`) VALUES
+(1, 169532, 9, 6, 'Ambrose ifeoma', 'Jigawa', '08067155866', '', '', '', 40000, '2017-02-23 14:59:47', '', 0, 0, 0, '', ''),
+(3, 753289, 9, 6, '', '', '', '', '', '', 20000, '2017-02-26 03:13:44', '', 0, 0, 0, '', ''),
+(5, 487136, 8, 6, '', '', '', '', '', '', 20000, '2017-02-26 03:18:02', '', 0, 0, 0, '', ''),
+(14, 487136, 8, 5, 'Onyepunuka O Emmanuel', 'Sokoto', '07036367061', '', '', '', 20000, '2017-02-26 03:31:43', '', 0, 0, 0, '', ''),
+(15, 753289, 9, 5, '', '', '', '', '', '', 20000, '2017-02-26 03:31:43', '', 0, 0, 0, '', ''),
+(20, 753289, 9, 3, 'tessy abu peter', 'Jigawa', '08038050689', '', '', '', 20000, '2017-02-26 03:39:47', '', 0, 0, 0, '', ''),
+(21, 753289, 9, 3, 'tessy abu peter', 'Jigawa', '08038050689', '', '', '', 20000, '2017-02-26 03:40:06', '', 0, 0, 0, '', ''),
+(22, 753289, 9, 3, 'tessy abu peter', 'Jigawa', '08038050689', '', '', '', 20000, '2017-02-26 03:51:03', '', 0, 0, 0, '', ''),
+(23, 487136, 8, 3, 'tessy abu peter', 'Jigawa', '08038050689', '', '', '', 20000, '2017-02-26 03:56:42', '', 0, 0, 0, '', ''),
+(24, 753289, 9, 8, 'Tunde ade', 'Ekiti', '08163836478', '', '', '', 20000, '2017-02-26 03:58:49', '', 0, 0, 0, '', ''),
+(25, 753289, 9, 9, 'Bisi Alimi', 'Rivers', '08172635487', '', '', '', 20000, '2017-02-26 03:59:57', '', 0, 0, 0, '', ''),
+(26, 487136, 8, 9, 'Bisi Alimi', 'Rivers', '08172635487', '', '', '', 40000, '2017-02-26 04:19:11', '', 0, 0, 0, '', ''),
+(27, 956873, 7, 8, 'Tunde ade', 'Ekiti', '08163836478', '', '', '', 40000, '2017-02-26 04:21:00', '', 0, 0, 0, '', ''),
+(28, 385426, 6, 7, 'Lucky fibre', 'Yobe', '09028770707', '', '', '', 40000, '2017-02-26 08:09:42', '', 0, 0, 0, '', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `request`
+--
+
+CREATE TABLE IF NOT EXISTS `request` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `did` varchar(50) NOT NULL,
+  `usr_id` int(11) NOT NULL COMMENT 'The donator or receiver account id',
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `due_date` timestamp NOT NULL,
+  `amount` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=30 ;
+
+--
+-- Dumping data for table `request`
+--
+
+INSERT INTO `request` (`id`, `did`, `usr_id`, `created_at`, `due_date`, `amount`) VALUES
+(1, '153796', 10, '2017-02-22 23:46:38', '2017-02-23 10:27:48', '20000'),
+(2, '256394', 5, '2017-02-23 06:25:37', '2017-02-23 10:27:58', '40000'),
+(3, '619437', 2, '2017-02-23 06:31:33', '2017-02-23 10:28:07', '20000'),
+(4, '257896', 2, '2017-02-23 10:12:19', '2017-02-23 10:28:18', '40000'),
+(5, '384296', 3, '2017-02-23 10:15:55', '2017-02-23 10:28:28', '20000'),
+(21, '384296', 3, '2017-02-23 15:39:47', '2017-02-26 03:39:47', '40000'),
+(22, '384296', 3, '2017-02-23 15:40:06', '2017-02-26 03:40:06', '40000'),
+(23, '384296', 3, '2017-02-23 15:51:03', '2017-02-26 03:51:03', '40000'),
+(24, '619437', 8, '2017-02-23 15:56:42', '2017-02-26 03:56:42', '40000'),
+(25, '619437', 9, '2017-02-23 15:58:49', '2017-02-26 03:58:49', '40000'),
+(26, '619437', 9, '2017-02-23 15:59:57', '2017-02-26 03:59:57', '40000'),
+(27, '619437', 8, '2017-02-23 16:19:11', '2017-02-26 04:19:11', '40000'),
+(28, '384296', 7, '2017-02-23 16:21:00', '2017-02-26 04:21:00', '40000'),
+(29, '619437', 6, '2017-02-23 20:09:42', '2017-02-26 08:09:42', '40000');
 
 -- --------------------------------------------------------
 
@@ -98,26 +178,36 @@ CREATE TABLE IF NOT EXISTS `users` (
   `acc_id` int(11) NOT NULL COMMENT 'account id',
   `usr_referral` varchar(125) DEFAULT NULL,
   `usr_fname` varchar(125) NOT NULL,
-  `usr_lname` varchar(125) NOT NULL,
-  `usr_uname` varchar(50) NOT NULL,
   `usr_email` varchar(255) NOT NULL,
   `usr_hash` varchar(255) NOT NULL,
   `usr_phone` varchar(50) NOT NULL,
   `usr_state` varchar(255) NOT NULL,
+  `usr_bank_name` varchar(50) NOT NULL,
+  `usr_account_name` varchar(125) NOT NULL,
+  `usr_account_type` varchar(125) NOT NULL,
+  `usr_account_number` varchar(125) NOT NULL,
   `usr_access_level` int(2) NOT NULL COMMENT 'up to 99',
   `usr_is_active` int(1) NOT NULL COMMENT '1 (active) or 0 (inactive)',
   `usr_bank` int(1) NOT NULL DEFAULT '0',
   `usr_created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `usr_pwd_change_code` varchar(50) NOT NULL,
   PRIMARY KEY (`usr_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=10 ;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`usr_id`, `acc_id`, `usr_referral`, `usr_fname`, `usr_lname`, `usr_uname`, `usr_email`, `usr_hash`, `usr_phone`, `usr_state`, `usr_access_level`, `usr_is_active`, `usr_bank`, `usr_created_at`, `usr_pwd_change_code`) VALUES
-(1, 0, 'philo4u2c@gmail.com', 'Sokoya', 'philip', 'philip', 'sokoyaphilip@yahoo.com', '5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8', '', '', 1, 1, 0, '2017-02-15 20:21:48', '');
+INSERT INTO `users` (`usr_id`, `acc_id`, `usr_referral`, `usr_fname`, `usr_email`, `usr_hash`, `usr_phone`, `usr_state`, `usr_bank_name`, `usr_account_name`, `usr_account_type`, `usr_account_number`, `usr_access_level`, `usr_is_active`, `usr_bank`, `usr_created_at`, `usr_pwd_change_code`) VALUES
+(1, 0, NULL, 'Sokoya Philip', 'sokoyaphilip@yahoo.com', '5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8', '08169254598', 'Ogun', 'GTB bank', 'Sokoya Adeniji Philip', 'Savings', '0156802356', 1, 1, 1, '2017-02-23 10:04:41', ''),
+(2, 0, NULL, 'okoro patience', 'okorooghenefejiro.3@gmail.com', '897ad9cb5812d245ad922db35d71e88f0fe764b5', '0912345678', 'Adamawa', 'skye bank', '3018862227', 'Savings', '3018862227', 2, 1, 1, '2017-02-23 10:09:43', ''),
+(3, 0, NULL, 'tessy abu peter', 'tessdareabupeters@yahoo.com', '409587de6f927717768b7dab518f81286995df67', '08038050689', 'Jigawa', 'Diamond Bank', 'Tessy Abu Peters', 'Savings', '08038050689', 2, 1, 1, '2017-02-23 10:13:18', ''),
+(4, 0, NULL, 'Bakre victory', 'aridinoisaace@yahoo.com', '5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8', '07033020150', 'Kebbi', 'unity bank', 'bakre victory', 'Savings', '0016796605', 2, 1, 1, '2017-02-23 10:16:49', ''),
+(5, 0, NULL, 'Onyepunuka O Emmanuel', 'sofortunequeens@gmail.com', '9191f71c51c656379450c3b2d8b69f8b1e8e7dee', '07036367061', 'Sokoto', 'unity bank', 'Onyepunuka emmanuel onyinye', 'Savings', '0027037854', 2, 1, 1, '2017-02-23 10:19:55', ''),
+(6, 0, NULL, 'Ambrose ifeoma', 'ambrose@gmail.com', '72d628afcba6276ef21c659ca04551993677b447', '08067155866', 'Jigawa', 'uba bank', 'ambrose ifeoma antonia', 'Savings', '2028348832', 2, 1, 1, '2017-02-23 10:22:16', ''),
+(7, 0, NULL, 'Lucky fibre', 'lucky@gmail.com', '5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8', '09028770707', 'Yobe', 'Zenith Bank', 'Lucky Fibre', 'Current', '0272811924', 2, 1, 1, '2017-02-23 10:30:59', ''),
+(8, 0, NULL, 'Tunde ade', 'tunde@yahoo.com', '5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8', '08163836478', 'Ekiti', 'uba bank', 'tunde ade', 'Savings', '9222726926', 2, 1, 1, '2017-02-23 10:32:37', ''),
+(9, 0, NULL, 'Bisi Alimi', 'bisi@gmail.com', '5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8', '08172635487', 'Rivers', 'Diamond Bank', 'Bisi Alimi', 'Savings', '7252282782', 2, 1, 1, '2017-02-23 10:35:27', '');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
